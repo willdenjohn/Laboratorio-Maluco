@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .classTest{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25pt;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="pecaCarrousel" class="classTest">Texto dentro da Div</div>
+    <div id="tagA">testandooooooo</div>
+
+</body>
+<script>
+    function FuncaoInserir(){
+        var divcarrousel = document.getElementById('pecaCarrousel');
+        var tagCapturada = document.getElementById('tagA');
+        divcarrousel.appendChild(tagCapturada);
+    }
+    FuncaoInserir();
+</script>
+</html>
